@@ -2,6 +2,7 @@ package general.elementary;
 
 /**
  * @author VedantWankhade
+ *
  * Problem: The problem is to develop a program that displays the current time in GMT (Greenwich Mean
  * Time) in the format hour:minute:second, such as 13:19:8.
  * The currentTimeMillis method in the System class returns the current time in milli-
@@ -11,6 +12,9 @@ package general.elementary;
  *
  * Java also provides the System.nanoTime() method that returns the elapse time in nano-
  * seconds. nanoTime() is more precise and accurate than currentTimeMillis()
+ *
+ * References:
+ *      https://en.wikipedia.org/wiki/Unix_time
  */
 public class DisplayCurrentTime {
     public static String currentTime() {
