@@ -1,5 +1,7 @@
 package general.numericals;
 
+import java.awt.geom.Point2D;
+import java.security.SecureRandom;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -55,11 +57,16 @@ public class GeneratingRandomNumbers {
         return generator.nextInt(a, b);
     }
 
+    public static int securedRandomNumber() {
+        Random rand = new SecureRandom();  // difficult to determine hence safe from hackers
+        return rand.nextInt();
+    }
+
     public static void main(String[] args) {
 //        Scanner in = new Scanner(System.in);
 //        int a = in.nextInt();
 //        in.close();
 
-        System.out.println(randomWithRandomClass(2, 5));
+        System.out.println(securedRandomNumber());
     }
 }
