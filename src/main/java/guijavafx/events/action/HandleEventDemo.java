@@ -1,4 +1,4 @@
-package guijavafx.events;
+package guijavafx.events.action;
 
 import javafx.application.Application;
 import javafx.event.ActionEvent;
