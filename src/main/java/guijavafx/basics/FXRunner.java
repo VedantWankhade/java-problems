@@ -1,9 +1,9 @@
 package guijavafx.basics;
 
-import guijavafx.events.key.KeyEventDemo;
+import guijavafx.animations.FadeTransitionDemo;
 import javafx.application.Application;
 
-public class FXRunner extends KeyEventDemo {
+public class FXRunner extends FadeTransitionDemo {
 	public static void main(String[] args) {
 		Application.launch();
 	}
