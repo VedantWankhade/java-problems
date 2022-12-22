@@ -1,8 +1,6 @@
 package guijavafx.events;
 
 import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -31,37 +29,42 @@ public class AnonHandlerDemo extends Application {
             up, down, left, right
         );
 
-        up.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                System.out.println(event);
-                textPane.up();
-            }
-        });
+//        up.setOnAction(new EventHandler<ActionEvent>() {
+//            @Override
+//            public void handle(ActionEvent event) {
+//                System.out.println(event);
+//                textPane.up();
+//            }
+//        });
+//
+//        down.setOnAction(new EventHandler<ActionEvent>() {
+//            @Override
+//            public void handle(ActionEvent event) {
+//                System.out.println(event);
+//                textPane.down();
+//            }
+//        });
+//
+//        left.setOnAction(new EventHandler<ActionEvent>() {
+//            @Override
+//            public void handle(ActionEvent event) {
+//                System.out.println(event);
+//                textPane.left();
+//            }
+//        });
+//
+//        right.setOnAction(new EventHandler<ActionEvent>() {
+//            @Override
+//            public void handle(ActionEvent event) {
+//                System.out.println(event);
+//                textPane.right();
+//            }
+//        });
 
-        down.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                System.out.println(event);
-                textPane.down();
-            }
-        });
-
-        left.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                System.out.println(event);
-                textPane.left();
-            }
-        });
-
-        right.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                System.out.println(event);
-                textPane.right();
-            }
-        });
+        up.setOnAction((event) -> textPane.up());
+        down.setOnAction((event) -> textPane.down());
+        left.setOnAction((event) -> textPane.left());
+        right.setOnAction((event) -> textPane.right());
 
         BorderPane pane = new BorderPane();
         pane.setCenter(textPane);
