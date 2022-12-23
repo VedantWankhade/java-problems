@@ -1,9 +1,9 @@
 package guijavafx.basics;
 
-import guijavafx.animations.bouncingball.BallController;
+import guijavafx.events.exercise.EyeHandCoordination;
 import javafx.application.Application;
 
-public class FXRunner extends BallController {
+public class FXRunner extends EyeHandCoordination {
 	public static void main(String[] args) {
 		Application.launch();
 	}
