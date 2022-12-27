@@ -49,6 +49,8 @@ public class GaltonMachine extends Application {
 
         temp.setStroke(Color.RED);
 
+        // TODO: 27/12/22 Make balls fall into slots and stay 
+
         double radius = 7;
         boolean flag = true;
         double startY = 2 * (temp.getEndY() + radius);
@@ -116,9 +118,12 @@ public class GaltonMachine extends Application {
                 }
             }
         }
+
+        // FIXME: 27/12/22 Window isnt shown before the animation starts, probably something to do with Thread.sleep at 142 
         primaryStage.setTitle("Galton Machine");
         primaryStage.setScene(scene);
         primaryStage.show();
+        
         // animate
         for (int i = 0; i < balls; i++) {
             Circle ball = new Circle(radius);
