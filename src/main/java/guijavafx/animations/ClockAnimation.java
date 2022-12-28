@@ -1,6 +1,6 @@
 package guijavafx.animations;
 
-import guijavafx.basics.clock.ClockPane;
+import guijavafx.basics.general.clock.ClockPane;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.application.Application;

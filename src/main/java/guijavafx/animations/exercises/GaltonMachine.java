@@ -119,7 +119,7 @@ public class GaltonMachine extends Application {
             }
         }
 
-        // FIXME: 27/12/22 Window isnt shown before the animation starts, probably something to do with Thread.sleep at 142 
+        // FIXME: 27/12/22 Window isnt shown before the animation starts, probably something to do with Thread.sleep at 142
         primaryStage.setTitle("Galton Machine");
         primaryStage.setScene(scene);
         primaryStage.show();
