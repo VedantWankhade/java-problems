@@ -1,9 +1,9 @@
 package guijavafx.basics.general;
 
-import guijavafx.basics.controlsandmultimedia.exercises.TicTacToe;
 import javafx.application.Application;
+import streamio.AddressBookGUI;
 
-public class FXRunner extends TicTacToe {
+public class FXRunner extends AddressBookGUI {
 	public static void main(String[] args) {
 		Application.launch();
 	}
