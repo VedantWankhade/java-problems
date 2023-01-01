@@ -1,7 +1,5 @@
 package oop.inheritance;
 
-import java.sql.Date;
-
 public class Circle extends GenericObject {
     private double radius;
 
